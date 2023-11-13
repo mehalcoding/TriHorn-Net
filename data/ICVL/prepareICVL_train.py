@@ -508,7 +508,7 @@ class ICVLImporter(DepthImporter):
                 continue
            
            
-            dptFileName = '{}/{}'.format(objdir, part[0])
+            dptFileName = '{}{}'.format(objdir, part[0])
 
             if not os.path.isfile(dptFileName):
                 print("File {} does not exist!".format(dptFileName))
