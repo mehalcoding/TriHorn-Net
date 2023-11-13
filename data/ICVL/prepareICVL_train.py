@@ -559,7 +559,7 @@ q1=np.stack(q1)
 
 dd=(data,q1)
 
-with open('train.pickle', 'wb') as f:
+with open('test.pickle', 'wb') as f:
     pickle.dump(dd, f)
 
 
