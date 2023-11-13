@@ -478,7 +478,7 @@ class ICVLImporter(DepthImporter):
 
 
         # Load the dataset
-        objdir = '{}/Depth'.format(self.basepath)
+        objdir = '/kaggle/input/icvl-dataset-full/Training/Depth'
         trainlabels = "/kaggle/input/icvl-dataset-full/Training/labels.txt"
         
         f=open("icvl_train_list.txt", "r")
