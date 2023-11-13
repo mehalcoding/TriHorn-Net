@@ -515,12 +515,16 @@ class ICVLImporter(DepthImporter):
                 i += 1
                 continue
             dpt = self.loadDepthMap(dptFileName)
+            print("part:")
+            print(part)
 
             # joints in image coordinates
             gtorig = numpy.zeros((self.numJoints, 3), numpy.float32)
             for joint in range(self.numJoints):
-                for xyz in range(0, 3):
+                for xyz in range(0, 3):                    
                     gtorig[joint, xyz] = part[joint*3+xyz+1]
+                    print(gtorig[joint, xyz])
+                        
  
             # normalized joints in 3D coordinates
             gt3Dorig = self.jointsImgTo3D(gtorig)
